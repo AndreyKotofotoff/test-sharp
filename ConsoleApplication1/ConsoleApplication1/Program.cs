@@ -6,16 +6,18 @@ namespace ConsoleApplication1
     {
         public static void Main(string[] args)
         {
-            Console.Write("Hello ");
-
+            var name = string.Empty;
             if (args.Length > 0 && string.Equals(args[0], "1"))
             {
-                Console.WriteLine(new Supplier1());
+                name = (new Supplier1()).getName();
             }
             else
             {
-                Console.WriteLine(new Supplier2());
+                name = (new Supplier2()).getName();
             }
+
+
+            Console.Write($"Hello ${name}");
 
             Console.Read();
         }

@@ -2,7 +2,7 @@ namespace ConsoleApplication1
 {
     public class Supplier1
     {
-        public override string ToString()
+        public string getName()
         {
             return this.GetType().Name;
         }
